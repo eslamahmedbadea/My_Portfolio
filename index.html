@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Personal Portfolio</title>
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="css/bootstrap.css" />
+
+  <!-- Style -->
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- Remix Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+
+  <!-- AOS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+
+  <!-- Fancybox -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" />
+
+  <!-- Ionicons -->
+  <script type="module" src="https://unpkg.com/ionicons@7.2.1/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.2.1/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body>
+  <!-- Start Nav Bar -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="navbar">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="assets/logo-09.png" class="logo">
+      </a>
+      <!-- Toggler Button (Fixed) -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Nav Items -->
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item" data-aos="fade-down" data-aos-delay="100">
+            <a href="#home" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item" data-aos="fade-down" data-aos-delay="150">
+            <a href="#services" class="nav-link">Services</a>
+          </li>
+          <li class="nav-item" data-aos="fade-down" data-aos-delay="200">
+            <a href="#work" class="nav-link">Work</a>
+          </li>
+          <li class="nav-item" data-aos="fade-down" data-aos-delay="250">
+            <a href="#resume" class="nav-link">Resume</a>
+          </li>
+          <li class="nav-item" data-aos="fade-down" data-aos-delay="300">
+            <a href="#contact" class="nav-link">Contact</a>
+          </li>
+        </ul>
+
+        <!-- Social Icons -->
+        <ul class="navbar-nav me-3">
+          <li class="nav-item" data-aos="fade-down" data-aos-delay="400">
+            <a href="https://www.behance.net/eslamahmedbadea" class="social-icon"><i class="ri-behance-line"></i></a>
+          </li>
+          <li class="nav-item" data-aos="fade-down" data-aos-delay="450">
+            <a href="https://github.com/eslamahmedbadea?tab=repositories" class="social-icon"><i
+                class="ri-github-line"></i></a>
+          </li>
+          <li class="nav-item" data-aos="fade-down" data-aos-delay="500">
+            <a href="https://www.instagram.com/eslamahmedbadea/" class="social-icon"><i
+                class="ri-instagram-line"></i></a>
+          </li>
+          <li class="nav-item" data-aos="fade-down" data-aos-delay="550">
+            <a href="https://www.facebook.com/eslamahmedbadea/" class="social-icon"><i class="ri-facebook-line"></i></a>
+          </li>
+          <li class="nav-item" data-aos="fade-down" data-aos-delay="550">
+            <a href="https://www.linkedin.com/in/eslam-ahmed-0b4294396/" class="social-icon"><i
+                class="ri-linkedin-line"></i></a>
+          </li>
+        </ul>
+
+        <!-- Dark Mode Icon -->
+        <div class="mode-icon" data-aos="fade-down" data-aos-offset="300" data-aos-easing="ease-in-sine"
+          data-aos-delay="500">
+          <ion-icon id="icon" class="sunny" name="sunny"></ion-icon>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- End Nav Bar -->
+
+  <div class="background-video">
+    <video src="assets/back.mp4" autoplay muted loop controls id="back-video">
+  </div>
+
+  <!-- Start Homepage -->
+  <section id="home" class="d-flex align-items-center min-vh-100">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine"
+          data-aos-delay="100">
+          <h1 class="display-2 fw-bold" id="home-content">
+            Hi there!, I am <span class="text-brand">Eslam Ahmed.</span>
+          </h1>
+          <h4 class="mt-3 mb-5" id="#title-text">
+            Graphic Deisgner <span>And Front-End Developer</span>
+          </h4>
+
+          <div class="d-flex gap-5" id="buttons">
+            <a href="https://wa.me/201205510781" class="btn btn-brand" id="first-button">Get Connect</a>
+            <a href="https://heyzine.com/flip-book/31a8e094c9.html" class="btn btn-brand">My Resume</a>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <img class="home-img" src="assets/Photo.png" data-aos="fade-left" data-aos-offset="300"
+            data-aos-easing="ease-in-sine" data-aos-delay="300" />
+          <div class="tools-icons">
+            <img src="assets/html.png" class="html-icon" />
+            <img src="assets/css.png" class="css-icon" />
+            <img src="assets/bootstrap.png" class="bootstrap-icon" />
+            <img src="assets/js.png" class="js-icon" />
+            <img src="assets/ps.png" class="ps-icon" />
+            <img src="assets/ai.png" class="ai-icon" />
+            <img src="assets/af.png" class="af-icon" />
+            <img src="assets/github.png" class="github-icon" />
+            <img src="assets/git.png" class="git-icon" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Homepage -->
+
+  <!-- Start About -->
+  <section id="about">
+    <div class="about-contain">
+      <div class="row" id="contain-about">
+        <div class="col-md-6">
+          <img src="assets/mac.png" alt="" class="mac-img" data-aos="fade-right" />
+        </div>
+        <div class="col-md-5" data-aos="fade-left" data-aos-delay="400">
+          <h1 class="display-2 fw-bold">About Me</h1>
+          <p>
+            Graphic Designer With A
+            <span> Strong Passion For Front-End Development. </span> <br />
+            <br />
+            I help brands and clients connect with their audience across the digital world,
+            creating meaningful interactions that reflect their identity and vision.
+            Whether through engaging social media content or well-built, user-friendly websites.
+          <p>
+            My focus is to combine creative visual design with clean, modern code, crafting digital experiences that
+            feel both functional and memorable.
+            Ultimately, my goal is to deliver work that stands out, strengthens brand identity, and leaves a lasting
+            impression.
+          </p>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End About -->
+
+  <!-- Start Services -->
+  <section id="services" class="section-padding">
+    <div class="container">
+      <div class="row" data-aos="zoom-in-down">
+        <div class="col-12">
+          <div class="section-title text-center">
+            <h1>Services</h1>
+            <p>
+              I provide creative and technical services designed to help brands express their identity with clarity and
+              impact.
+              Through thoughtful design, smart execution, and attention to detail, I bring ideas to life in a way that
+              feels unique and engaging. My goal is to help every brand stand out, connect with its audience.
+            </p>
+            <div class="line"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row gy-4 text-center">
+        <!-- Service Cards -->
+        <div class="col-lg-12 col-sm-6">
+          <div class="service py-5 px-4" style="background-color: var(--primary-color)" data-aos="fade-right"
+            data-aos-delay="200">
+            <h5 id="service-card-title">Advertising Design</h5>
+            <p id="service-card-p">
+              I provide creative, technical, and social media design services that help brands stand out with clarity
+              and confidence.
+              From clean, modern front-end development to full advertising design workflows, I use professional Adobe
+              tools such as Photoshop, Illustrator, and After Effects to build visuals that are polished, impactful, and
+              ready for any campaign.
+              My goal is to deliver fast, responsive, and visually strong solutions that look great, perform smoothly,
+              and bring real value to your brand’s online presence.
+            </p>
+            <a href="https://www.behance.net/eslamahmedbadea" class="custom-link"><span>Show More</span><i
+                class="ri-arrow-right-line"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-12 col-sm-6">
+          <div class="service py-5 px-4 border" style="background-color: var(--primary-color)" data-aos="fade-left"
+            data-aos-delay="400">
+            <h5 id="service-card-title">Logo & Visual Identity Design</h5>
+            <p id="service-card-p">
+              I provide creative, technical, and branding design services that help brands stand out with a clear and
+              confident identity.
+              From custom logo creation to building full visual identity systems, I focus on delivering designs that are
+              memorable, meaningful, and visually powerful across all touchpoints.
+              My goal is to craft work that feels unique, remains consistent in every detail, and adds real value to
+              your brand’s image, presence, and long-term recognition.
+            </p>
+            <a href="https://www.behance.net/eslamahmedbadea" class="custom-link"><span>Show More</span><i
+                class="ri-arrow-right-line"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-12 col-sm-6">
+          <div class="service py-5 px-4 border" style="background-color: var(--primary-color)" data-aos="fade-right"
+            data-aos-delay="600">
+            <h5 id="service-card-title">Front-End Development</h5>
+            <p id="service-card-p">
+              I provide creative, technical, and front-end development services that help brands stand out in a
+              competitive digital world.
+              From clean UI implementation to smooth, modern interactions, I focus on transforming ideas into fast,
+              responsive, and visually engaging web experiences that feel intuitive and refined.
+              My goal is to build websites that not only look great but also work flawlessly, enhancing your brand’s
+              digital presence and delivering real value to your audience.
+            </p>
+            <a href="https://github.com/eslamahmedbadea?tab=repositories" class="custom-link"><span>Show More</span><i
+                class="ri-arrow-right-line"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Services -->
+
+  <!-- Start Tools I Like To Use -->
+  <section id="tools" class="section-padding">
+    <div class="container">
+      <div class="row" data-aos="zoom-in-down">
+        <div class="col-12">
+          <div class="tools-title text-center">
+            <h1>tools i like to use</h1>
+            <p>
+              I enjoy working with a variety of creative tools that empower me to bring my ideas to life.
+              These tools help me stay organized, experiment with new concepts, and push my skills further.
+              They play a big role in helping me reach my goals and deliver unique, impactful work.
+            </p>
+            <div class="line"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row gy-4 text-center">
+        <!-- Tools Cards -->
+        <div class="col-lg-2 col-sm-6">
+          <div class="tools py-5 px-4" style="background-color: var(--primary-color)" data-aos="fade-right"
+            data-aos-delay="50">
+            <img src="assets/ps.png" id="tool-like1">
+            <!-- <img src="assets/ai.png" id="tool-like2"> -->
+            <h5 id="tools-title-h" style="text-align: center;">
+              Photoshop
+            </h5>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-sm-6">
+          <div class="tools py-5 px-4" style="background-color: var(--primary-color)" data-aos="fade-right"
+            data-aos-delay="100">
+            <img src="assets/ai.png" id="tool-like2">
+            <h5 id="tools-title-h" style="text-align: center;">
+              Illustrator
+            </h5>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-sm-6">
+          <div class="tools py-5 px-4" style="background-color: var(--primary-color)" data-aos="fade-right"
+            data-aos-delay="150">
+            <img src="assets/af.png" id="tool-like3">
+            <h5 id="tools-title-h" style="text-align: center;">
+              After Effects
+            </h5>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-sm-6">
+          <div class="tools py-5 px-4" style="background-color: var(--primary-color)" data-aos="fade-right"
+            data-aos-delay="200">
+            <img src="assets/behance.png" id="tool-like4">
+            <h5 id="tools-title-h" style="text-align: center;">
+              Behance
+            </h5>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-sm-6">
+          <div class="tools py-5 px-4" style="background-color: var(--primary-color)" data-aos="fade-right"
+            data-aos-delay="250">
+            <img src="assets/html.png" id="tool-like5">
+            <h5 id="tools-title-h" style="text-align: center;">
+              HTML
+            </h5>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-sm-6">
+          <div class="tools py-5 px-4" style="background-color: var(--primary-color)" data-aos="fade-right"
+            data-aos-delay="300">
+            <img src="assets/css.png" id="tool-like6">
+            <h5 id="tools-title-h" style="text-align: center;">
+              CSS
+            </h5>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-sm-6">
+          <div class="tools py-5 px-4" style="background-color: var(--primary-color)" data-aos="fade-left"
+            data-aos-delay="550">
+            <img src="assets/js.png" id="tool-like7">
+            <h5 id="tools-title-h" style="text-align: center;">
+              JavaScript
+            </h5>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-sm-6">
+          <div class="tools py-5 px-4" style="background-color: var(--primary-color)" data-aos="fade-left"
+            data-aos-delay="500">
+            <img src="assets/bootstrap.png" id="tool-like8">
+            <h5 id="tools-title-h" style="text-align: center;">
+              Bootstrap
+            </h5>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-sm-6">
+          <div class="tools py-5 px-4" style="background-color: var(--primary-color)" data-aos="fade-left"
+            data-aos-delay="450">
+            <img src="assets/git.png" id="tool-like9">
+            <h5 id="tools-title-h" style="text-align: center;">
+              Git
+            </h5>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-sm-6">
+          <div class="tools py-5 px-4" style="background-color: var(--primary-color)" data-aos="fade-left"
+            data-aos-delay="400">
+            <img src="assets/github.png" id="tool-like10">
+            <h5 id="tools-title-h" style="text-align: center;">
+              GitHub
+            </h5>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-sm-6">
+          <div class="tools py-5 px-4" style="background-color: var(--primary-color)" data-aos="fade-left"
+            data-aos-delay="350">
+            <img src="assets/vscode.png" id="tool-like11">
+            <h5 id="tools-title-h" style="text-align: center;">
+              VS Code
+            </h5>
+          </div>
+        </div>
+      </div>
+  </section>
+  <!-- End Tools I Like To Use -->
+
+  <!-- Start Work -->
+  <section id="work">
+    <div class="container">
+      <div class="row" data-aos="zoom-in-down">
+        <div class="col-12">
+          <div class="section-title text-center">
+            <h1>Work</h1>
+            <p>styles and objectives.
+              Each project reflects my approach to design, creativity, and problem-solving.
+              Together, they highlight the skills and vision I bring to every piece of work.</p>
+            <div class="line"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row g-2" id="work-projects">
+        <div class="col-lg-4 col--sm-6" data-aos="fade-up" data-aos-delay="100">
+          <div class="project">
+            <img src="assets/post1.jpg" />
+            <div class="content">
+              <a href="assets/post1.jpg" data-fancybox="gallery" class="btn btn-outline">View Project</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col--sm-6" data-aos="fade-up" data-aos-delay="100">
+          <div class="project">
+            <img src="assets/post2.jpg" />
+            <div class="content">
+              <a href="assets/post2.jpg" data-fancybox="gallery" class="btn btn-outline">View Project</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col--sm-6" data-aos="fade-up" data-aos-delay="100">
+          <div class="project">
+            <img src="assets/post3.jpg" />
+            <div class="content">
+              <a href="assets/post3.jpg" data-fancybox="gallery" class="btn btn-outline">View Project</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6 col--sm-6" data-aos="fade-up" data-aos-delay="200">
+          <div class="project">
+            <img src="assets/post4.jpg" />
+            <div class="content">
+              <a href="assets/post4.jpg" data-fancybox="gallery" class="btn btn-outline">View Project</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6 col--sm-6" data-aos="fade-up" data-aos-delay="200">
+          <div class="project">
+            <img src="assets/post5.jpg" />
+            <div class="content">
+              <a href="assets/post5.jpg" data-fancybox="gallery" class="btn btn-outline">View Project</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-12 col--sm-6" data-aos="fade-up" data-aos-delay="300">
+          <div class="project">
+            <img src="assets/web1.png" />
+            <div class="content">
+              <a href="assets/web1.png" data-fancybox="gallery" class="btn btn-outline">View Project</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-12 col--sm-6" data-aos="fade-up" data-aos-delay="300">
+          <div class="project">
+            <img src="assets/web2.png" />
+            <div class="content">
+              <a href="assets/web2.png" data-fancybox="gallery" class="btn btn-outline">View Project</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- End Work -->
+
+  <!-- Start Resume -->
+  <section id="resume">
+    <div class="container">
+      <div class="row" data-aos="zoom-in-down" data-aos-delay="300">
+        <div class="col-12 col-sm-6">
+          <div class="section-title text-center">
+            <h1>Education & Experience</h1>
+            <p>
+              Here, you can explore more about who I am as a person
+              from my educational background and the skills I’ve developed
+              to the experiences that have shaped my journey and career.
+            </p>
+            <div class="line"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row gy-5">
+        <div class="col-md-6" id="college-info">
+          <div class="row">
+            <div class="col-12" data-aos="fade-right">
+              <div class="eduexp p-5 pt-0">
+                <h5>Faculty of social work</h5>
+                <h6>Oct 2021 - Jul 2025</h6>
+                <p>
+                  I studied at the Faculty of Social Work, where I developed strong communication skills,
+                  problem-solving abilities, and an understanding of human behavior.
+                <p>These skills helped me work effectively with clients, understand their needs, and translate them into
+                  creative design solutions and functional digital experiences.</p>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="work-content-container col-lg-6 border" style="border: none !important;" data-aos="fade-left"
+          data-aos-delay="200">
+          <div class="col-md-12 col-sm-6" id="full-info">
+            <div class="row">
+              <div class="col-12 col-sm-6" id="work-info">
+                <div class="eduexp p-5 pt-0">
+                  <h5>WeOryx</h5>
+                  <p>Graphic Design Internship</p>
+                  <h6>Aug 2022 - Nov 2022</h6>
+                  <p>
+                    During my graphic design training, I worked on a wide range of creative tasks, including video
+                    editing, GIF creation, and social media content.
+                    I consistently delivered visually appealing designs that matched the brand’s identity and
+                    communication goals.
+                    This experience helped me improve my technical skills, creativity, and ability to work under
+                    deadlines.
+                  </p>
+                </div>
+              </div>
+
+              <div class="col-12 col-sm-6" id="work-info">
+                <div class="eduexp p-5 pt-0">
+                  <h5>Fouq Agency</h5>
+                  <p>Remotely Graphic Designer</p>
+                  <h6>Mar 2023 - Jul 2024</h6>
+                  <p>
+                    It is a Jordanian company operating in the Jordanian, Saudi, and Iraqi markets, serving clients
+                    across various industries.
+                    During my time there, I created social media designs, Instagram carousels, logos, full visual
+                    identities, and essential print materials.
+                    I also designed key PDF documents and proposals, ensuring high-quality visuals that aligned with
+                    each client's brand.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+  </section>
+  <!-- End Resume -->
+
+  <!-- Start Footer -->
+  <footer class="footer py-5" id="contact">
+    <div class="container">
+      <div class="row gy-4" data-aos="fade-left" data-aos-delay="400">
+        <!-- Column 1 -->
+        <div class="col-md-4">
+          <h3>Eslam Ahmed</h3>
+          <p>
+            If you want to start working with me on any project just contact
+            on any social media platoform and let's start together
+          </p>
+
+          <div class="social-icons d-flex gap-3 mt-3">
+            <a href="https://www.behance.net/eslamahmedbadea" class="icon-box"><i class="ri-behance-line"></i></a>
+            <a href="https://github.com/eslamahmedbadea?tab=repositories" class="icon-box"><i
+                class="ri-github-line"></i></a>
+            <a href="https://www.instagram.com/eslamahmedbadea/" class="icon-box"><i class="ri-instagram-line"></i></a>
+            <a href="https://www.facebook.com/eslamahmedbadea/" class="icon-box"><i class="ri-facebook-line"></i></a>
+            <a href="https://www.linkedin.com/in/eslam-ahmed-0b4294396/" class="icon-box"><i
+                class="ri-linkedin-line"></i></a>
+          </div>
+        </div>
+
+        <!-- Column 2 -->
+        <div class="col-md-4">
+          <h3>Quick Links</h3>
+          <ul class="list-unstyled footer-links mt-3">
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3 -->
+        <div class="col-md-4">
+          <h3>Contact</h3>
+          <ul class="list-unstyled mt-3">
+            <li>Email: eslam.ahmed.mohamed@gmail.com</li>
+            <li>Phone: +201205510781</li>
+            <li>Address: Egypt</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- End Footer -->
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

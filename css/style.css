@@ -1,0 +1,1018 @@
+/* Start Global Attributes */
+:root {
+  --primary-color: #0d6efd;
+  --secondary-color: #063987;
+  --text-color: white;
+  --background-color: #1b1f29;
+  --navbar-bg: #10131a;
+  --section-padding: 100px;
+  --transition: 0.3s;
+}
+
+/* Dark Mode */
+body.dark-theme {
+  --primary-color: #0d6efd;
+  --secondary-color: #063987;
+  --text-color: #063987;
+  --background-color: #ffffff;
+  --navbar-bg: var(--primary-color);
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  transition: var(--transition);
+  overflow-x: hidden;
+}
+
+section {
+  background: transparent !important;
+}
+
+/* End Global Attributes */
+
+.background-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.background-video video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+  opacity: 6%;
+  align-self: center;
+}
+
+/* Start Navbar */
+.navbar {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: var(--secondary-color);
+  transition: var(--transition);
+}
+
+#navbar-logo {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.navbar-toggler {
+  border-color: white;
+  transform: translateX(-100px);
+}
+
+
+.navbar.scroll {
+  padding-top: 7px;
+  padding-bottom: 7px;
+  background-color: var(--secondary-color);
+  box-shadow: 0px 15px 40px rgba(0, 0, 0, 0.3);
+}
+
+.logo {
+  width: 100px;
+  height: auto;
+  object-fit: contain;
+  transform: scale(2.2);
+}
+
+.navbar .nav-link,
+.navbar-brand {
+  color: white;
+  font-weight: 600;
+  transition: var(--transition);
+}
+
+.navbar .nav-link:hover {
+  transform: scale(1.1);
+  border-bottom: 1px solid var(--primary-color);
+}
+
+/* Social Icons */
+.social-icon {
+  display: inline-flex;
+  width: 40px;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  border: 1px solid white;
+  font-size: 18px;
+  margin-right: 10px;
+  transition: var(--transition);
+  border-radius: 10px;
+}
+
+.social-icon:hover {
+  background: var(--primary-color);
+  transform: scale(1.2);
+}
+
+.navbar-brand:hover {
+  color: var(--primary-color);
+}
+
+/* Dark Mode Icon */
+#icon {
+  font-size: 35px;
+  cursor: pointer;
+  margin-left: 15px;
+  color: white;
+  transition: var(--transition);
+}
+
+#icon:hover {
+  transform: scale(1.2);
+}
+
+/* End Navbar */
+
+/* Start Homepage */
+#home {
+  position: relative;
+}
+
+#home h4 {
+  color: var(--text-color);
+}
+
+#home h4 span {
+  color: var(--primary-color);
+}
+
+.home-img {
+  max-width: 100%;
+  background-position: center;
+}
+
+@keyframes home-img {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(15px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.home-img {
+  width: 100%;
+  animation: home-img 3s infinite ease-in-out;
+}
+
+/* ================= HTML Icon ================= */
+.html-icon {
+  width: 80px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(200px, -250px);
+  animation: htmlMove 2s infinite ease-in-out;
+}
+
+@keyframes htmlMove {
+  0% {
+    transform: translate(200px, -250px) translateY(0);
+  }
+
+  50% {
+    transform: translate(200px, -250px) translateY(15px);
+  }
+
+  100% {
+    transform: translate(200px, -250px) translateY(0);
+  }
+}
+
+/* ================= CSS Icon ================= */
+.css-icon {
+  width: 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(520px, -280px);
+  animation: cssMove 2s infinite ease-in-out;
+}
+
+@keyframes cssMove {
+  0% {
+    transform: translate(520px, -280px) translateY(0);
+  }
+
+  50% {
+    transform: translate(520px, -280px) translateY(15px);
+  }
+
+  100% {
+    transform: translate(520px, -280px) translateY(0);
+  }
+}
+
+/* ================ Bootstrap Icon ================= */
+.bootstrap-icon {
+  width: 80px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(520px, -160px);
+  animation: bootMove 2s infinite ease-in-out;
+}
+
+@keyframes bootMove {
+  0% {
+    transform: translate(520px, -160px) translateY(0);
+  }
+
+  50% {
+    transform: translate(520px, -160px) translateY(15px);
+  }
+
+  100% {
+    transform: translate(520px, -160px) translateY(0);
+  }
+}
+
+/* ================= JS Icon ================= */
+.js-icon {
+  width: 100px;
+  position: absolute;
+  top: 50%;
+  left: 48%;
+  transform: translate(130px, -190px);
+  animation: jsMove 2s infinite ease-in-out;
+}
+
+@keyframes jsMove {
+  0% {
+    transform: translate(130px, -160px) translateY(0);
+  }
+
+  50% {
+    transform: translate(130px, -160px) translateY(15px);
+  }
+
+  100% {
+    transform: translate(130px, -160px) translateY(0);
+  }
+}
+
+/* ================= Photoshop Icon ================= */
+.ps-icon {
+  width: 45px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(150px, -50px);
+  animation: psMove 2s infinite ease-in-out;
+}
+
+@keyframes psMove {
+  0% {
+    transform: translate(150px, -50px) translateY(0);
+  }
+
+  50% {
+    transform: translate(150px, -50px) translateY(15px);
+  }
+
+  100% {
+    transform: translate(150px, -50px) translateY(0);
+  }
+}
+
+/* ================= Illustrator Icon ================= */
+.ai-icon {
+  width: 45px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(560px, 130px);
+  animation: aiMove 2s infinite ease-in-out;
+}
+
+@keyframes aiMove {
+  0% {
+    transform: translate(560px, 130px) translateY(0);
+  }
+
+  50% {
+    transform: translate(560px, 130px) translateY(15px);
+  }
+
+  100% {
+    transform: translate(560px, 130px) translateY(0);
+  }
+}
+
+/* ================= After Effects Icon ================= */
+.af-icon {
+  width: 45px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(100px, 80px);
+  animation: afMove 2s infinite ease-in-out;
+}
+
+@keyframes afMove {
+  0% {
+    transform: translate(100px, 80px) translateY(0);
+  }
+
+  50% {
+    transform: translate(100px, 80px) translateY(15px);
+  }
+
+  100% {
+    transform: translate(100px, 80px) translateY(0);
+  }
+}
+
+/* ================= Git Icon ================= */
+.git-icon {
+  width: 60px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(500px, 280px);
+  animation: gitMove 2s infinite ease-in-out;
+}
+
+@keyframes gitMove {
+  0% {
+    transform: translate(500px, 280px) translateY(0);
+  }
+
+  50% {
+    transform: translate(500px, 280px) translateY(15px);
+  }
+
+  100% {
+    transform: translate(500px, 280px) translateY(0);
+  }
+}
+
+/* ================= GitHub Icon ================= */
+.github-icon {
+  width: 60px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(110px, 230px);
+  animation: githubMove 2s infinite ease-in-out;
+}
+
+@keyframes githubMove {
+  0% {
+    transform: translate(110px, 230px) translateY(0);
+  }
+
+  50% {
+    transform: translate(110px, 230px) translateY(15px);
+  }
+
+  100% {
+    transform: translate(110px, 230px) translateY(0);
+  }
+}
+
+@media (max-width: 1388px) {
+  .tools-icons {
+    display: none;
+  }
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.row .col-md-6 h1 {
+  color: var(--primary-color);
+}
+
+.row .col-md-6 h4 {
+  color: var(--text-color);
+}
+
+.btn {
+  padding: 10px 25px;
+  border-color: var(--text-color);
+  border-radius: 0;
+  color: var(--text-color);
+  font-weight: 600;
+  transition: var(--transition);
+  border-radius: 10px;
+}
+
+#first-button {
+  background-color: var(--primary-color);
+  padding: 10px 25px;
+  border: none;
+  color: white;
+  font-weight: 600;
+  transition: var(--transition);
+  border-radius: 10px;
+}
+
+#first-button:hover {
+  background-color: #063987;
+}
+
+.btn:hover {
+  transform: scale(1.2);
+  background-color: var(--secondary-color);
+  color: white;
+}
+
+@media (max-width: 767px) {
+  #buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.tech-icons {
+  color: var(--primary-color);
+  font-size: 28px;
+  transition: var(--transition);
+  cursor: pointer;
+}
+
+.tech-icons i {
+  margin-right: 5px;
+}
+
+@media (max-width: 767px) {
+  .row {
+    text-align: center;
+  }
+
+  .home-img {
+    max-width: 100%;
+    margin-top: 10px;
+  }
+
+  .row .col-md-6 h1 {
+    font-size: 25px;
+  }
+
+  .row .col-md-6 h4 {
+    font-size: 20px;
+  }
+
+  .button {
+    margin-top: -20px;
+  }
+}
+
+/* End Homepage */
+
+/* Start About */
+#about {
+  background-color: var(--background-color);
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.about-contain {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+@keyframes mac-img {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(20px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.mac-img {
+  max-width: 85%;
+  animation: mac-img 3s infinite ease-in-out;
+}
+
+#about span {
+  color: var(--primary-color);
+  font-size: 18px;
+}
+
+#about p {
+  font-size: 18px;
+}
+
+#about h1 {
+  color: var(--primary-color);
+  margin-bottom: 15px;
+  position: relative;
+}
+
+@media (max-width: 767px) {
+  #contain-about {
+    flex-direction: column-reverse;
+  }
+
+  #about p,
+  #about span {
+    font-size: 15px;
+  }
+}
+
+/* End About */
+
+/* Start Services */
+#services {
+  padding: var(--section-padding);
+  background-color: var(--background-color);
+}
+
+.section-title .line {
+  width: 100px;
+  height: 2px;
+  background-color: var(--text-color);
+  display: inline-block;
+}
+
+.service {
+  border: none !important;
+  border-radius: 20px;
+}
+
+.section-title {
+  max-width: 780px;
+  margin: 0 auto 60px auto;
+}
+
+#whole-card-style {
+  border-color: var(--text-color);
+}
+
+.section-title h1 {
+  color: var(--text-color);
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
+.section-title p {
+  color: var(--text-color);
+  line-height: 1.7;
+}
+
+.service-icon {
+  font-size: 28px;
+  color: var(--text-color);
+}
+
+#service-card-title {
+  color: white;
+  margin-bottom: 15px;
+  font-weight: bold;
+  text-align: left;
+  margin-bottom: 50px;
+}
+
+#service-card-p {
+  color: white;
+  text-align: left;
+}
+
+#icon-service {
+  color: white;
+}
+
+.custom-link {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+.custom-link:hover {
+  transform: translateX(6px);
+  font-weight: bold;
+}
+
+.custom-link i {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 10px;
+  color: white;
+}
+
+.custom-link span {
+  color: white;
+  font-weight: 500;
+}
+
+/* End Services */
+
+/* Start Tools I Like To Use */
+#tool {
+  padding: var(--section-padding);
+  background-color: var(--background-color);
+}
+
+.tool-title .line {
+  width: 100px;
+  height: 2px;
+  background-color: var(--text-color);
+  display: inline-block;
+}
+
+.tools {
+  border: none !important;
+  border-radius: 20px;
+}
+
+.tools-title {
+  max-width: 780px;
+  margin: 0 auto 60px auto;
+}
+
+#whole-card-style {
+  border-color: var(--text-color);
+}
+
+.tools-title h1 {
+  color: var(--text-color);
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
+.tools-card p {
+  color: var(--text-color);
+  line-height: 1.7;
+}
+
+#tools-card-title {
+  color: white;
+  margin-bottom: 15px;
+  font-weight: bold;
+  text-align: left;
+  margin-bottom: 50px;
+}
+
+#tools-card-p {
+  color: white;
+  text-align: left;
+}
+
+#tools-title-h {
+  color: white;
+}
+
+#tool-like1 {
+  width: 100px;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+#tool-like2 {
+  width: 100px;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+#tool-like3 {
+  width: 100px;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+#tool-like4 {
+  width: 100px;
+  transform: scale(1.8);
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+#tool-like5 {
+  width: 120px;
+}
+
+#tool-like6 {
+  width: 108px;
+  transform: scale(0.8);
+}
+
+#tool-like7 {
+  width: 108px;
+  transform: scale(1.6);
+}
+
+#tool-like8 {
+  width: 107px;
+  transform: scale(1.3);
+}
+
+#tool-like9 {
+  width: 108px;
+  transform: scale(0.9);
+}
+
+#tool-like10 {
+  width: 108px;
+  transform: scale(0.9);
+}
+
+#tool-like11 {
+  width: 100px;
+  transform: scale(0.8);
+}
+
+/* End Tools I Like To Use */
+
+/* Start Work */
+#work {
+  padding: var(--section-padding);
+  background-color: var(--background-color);
+}
+
+.section-title .line {
+  width: 100px;
+  height: 2px;
+  background-color: var(--text-color);
+  display: inline-block;
+}
+
+.project img {
+  max-width: 100%;
+  transform: scale(1.004);
+}
+
+.project img,
+.project .content {
+  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+  border-radius: 10px;
+}
+
+.project:hover .content {
+  top: 0;
+}
+
+.project {
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.project .content {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: var(--background-color);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* End Work */
+
+/* Start Resume */
+#resume {
+  padding: var(--section-padding);
+}
+
+.work-content-container {
+  background-color: var(--primary-color);
+  border-radius: 10px;
+}
+
+#full-info {
+  padding-top: 35px;
+}
+
+#full-info h6 {
+  margin-bottom: 20px;
+  font-weight: 400;
+}
+
+#full-info p {
+  font-size: 15px;
+  font-weight: 500;
+  margin: 0;
+}
+
+#college-info h5 {
+  font-size: 25px;
+  color: var(--primary-color);
+}
+
+#college-info h6 {
+  font-size: 13px;
+  margin-bottom: 20px;
+}
+
+#work-info {
+  color: white;
+}
+
+#work-info h5 {
+  font-size: 25px;
+}
+
+#work-info h6 {
+  font-size: 13px;
+}
+
+/* End Resume */
+
+/* Start Footer */
+.footer {
+  background-color: var(--secondary-color);
+  color: white;
+}
+
+.footer h3 {
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.footer p,
+.footer li {
+  color: #cfd6e1;
+  font-size: 15px;
+}
+
+.footer-links li {
+  margin-bottom: 8px;
+}
+
+.footer-links li a {
+  text-decoration: none;
+  color: #cfd6e1;
+  transition: 0.3s;
+}
+
+.footer-links li a:hover {
+  color: white;
+}
+
+.icon-box {
+  width: 40px;
+  height: 40px;
+  border: 2px solid #cfd6e1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #cfd6e1;
+  font-size: 20px;
+  transition: var(--transition);
+  border-radius: 10px;
+}
+
+.icon-box:hover {
+  background-color: var(--primary-color);
+  color: #1b1f2b;
+  border-color: white;
+  transform: scale(1.2);
+}
+
+/* ================== SMART MEDIA QUERY FIXES ================== */
+@media (max-width: 992px) {
+
+  /* Hide Floating Icons */
+  .html-icon,
+  .css-icon,
+  .bootstrap-icon,
+  .js-icon,
+  .ps-icon,
+  .ai-icon,
+  .af-icon,
+  .git-icon,
+  .github-icon {
+    display: none !important;
+  }
+
+  /* Hero text */
+  .row .col-md-6 h1 {
+    font-size: 32px;
+  }
+
+  .row .col-md-6 h4 {
+    font-size: 18px;
+  }
+
+  /* Buttons - better spacing */
+  #buttons .btn,
+  #first-button {
+    padding: 8px 18px;
+    font-size: 15px;
+  }
+
+  /* Remove big scale on mobile */
+  .btn:hover {
+    transform: none;
+  }
+
+  /* Home IMG */
+  .home-img {
+    width: 85%;
+    margin-top: 20px;
+  }
+}
+
+/* ================== MOBILE ================== */
+@media (max-width: 767px) {
+
+  #home-content {
+    margin-top: 50px;
+  }
+
+  /* Reduce section padding */
+  section {
+    padding: 60px 0 !important;
+  }
+
+  /* Titles */
+  h1 {
+    font-size: 26px !important;
+  }
+
+  /* About */
+  #about p,
+  #about span {
+    font-size: 14px;
+  }
+
+  .mac-img {
+    max-width: 70%;
+  }
+
+  /* Services cards */
+  .service,
+  .tools {
+    padding: 20px;
+  }
+
+  .section-title p {
+    font-size: 14px;
+  }
+
+  /* Work images */
+  .project img {
+    transform: scale(1);
+  }
+
+  /* Footer */
+  .footer p,
+  .footer li {
+    font-size: 13px;
+  }
+
+  .footer .social-icons a {
+    display: none;
+  }
+}
+
+/* ================== VERY SMALL MOBILES (iPhone SE / 360px) ================== */
+@media (max-width: 420px) {
+
+  .row .col-md-6 h1 {
+    font-size: 22px;
+  }
+
+  .row .col-md-6 h4 {
+    font-size: 16px;
+  }
+
+  #buttons {
+    flex-direction: column;
+  }
+
+  #buttons .btn,
+  #first-button {
+    margin-bottom: 10px;
+    width: 100%;
+  }
+}
+
+/* End Footer */
