@@ -28,7 +28,6 @@ body {
 section {
   background: transparent !important;
 }
-
 /* End Global Attributes */
 
 .background-video {
@@ -70,7 +69,6 @@ section {
   border-color: white;
   transform: translateX(-100px);
 }
-
 
 .navbar.scroll {
   padding-top: 7px;
@@ -179,7 +177,7 @@ section {
   width: 80px;
   position: absolute;
   top: 50%;
-  left: 50%;
+  left: 47%;
   transform: translate(200px, -250px);
   animation: htmlMove 2s infinite ease-in-out;
 }
@@ -202,7 +200,7 @@ section {
 .css-icon {
   width: 50px;
   position: absolute;
-  top: 50%;
+  top: 60%;
   left: 50%;
   transform: translate(520px, -280px);
   animation: cssMove 2s infinite ease-in-out;
@@ -226,7 +224,7 @@ section {
 .bootstrap-icon {
   width: 80px;
   position: absolute;
-  top: 50%;
+  top: 65%;
   left: 50%;
   transform: translate(520px, -160px);
   animation: bootMove 2s infinite ease-in-out;
@@ -250,7 +248,7 @@ section {
 .js-icon {
   width: 100px;
   position: absolute;
-  top: 50%;
+  top: 60%;
   left: 48%;
   transform: translate(130px, -190px);
   animation: jsMove 2s infinite ease-in-out;
@@ -271,7 +269,7 @@ section {
 }
 
 /* ================= Photoshop Icon ================= */
-.ps-icon {
+/* .ps-icon {
   width: 45px;
   position: absolute;
   top: 50%;
@@ -292,10 +290,10 @@ section {
   100% {
     transform: translate(150px, -50px) translateY(0);
   }
-}
+} */
 
 /* ================= Illustrator Icon ================= */
-.ai-icon {
+/* .ai-icon {
   width: 45px;
   position: absolute;
   top: 50%;
@@ -316,9 +314,9 @@ section {
   100% {
     transform: translate(560px, 130px) translateY(0);
   }
-}
+} */
 
-/* ================= After Effects Icon ================= */
+/* ================= After Effects Icon =================
 .af-icon {
   width: 45px;
   position: absolute;
@@ -340,13 +338,13 @@ section {
   100% {
     transform: translate(100px, 80px) translateY(0);
   }
-}
+} */
 
 /* ================= Git Icon ================= */
 .git-icon {
   width: 60px;
   position: absolute;
-  top: 50%;
+  top: 45%;
   left: 50%;
   transform: translate(500px, 280px);
   animation: gitMove 2s infinite ease-in-out;
@@ -687,7 +685,7 @@ section {
   color: white;
 }
 
-#tool-like1 {
+/* #tool-like1 {
   width: 100px;
   margin-bottom: 20px;
   padding: 10px;
@@ -710,41 +708,42 @@ section {
   transform: scale(1.8);
   margin-bottom: 20px;
   padding: 10px;
-}
+} */
 
 #tool-like5 {
-  width: 120px;
+  width: 100px;
+  transform: scale(1.2);
 }
 
 #tool-like6 {
-  width: 108px;
-  transform: scale(0.8);
+  width: 90px;
+  transform: scale(1);
 }
 
 #tool-like7 {
-  width: 108px;
+  width: 100px;
   transform: scale(1.6);
 }
 
 #tool-like8 {
-  width: 107px;
+  width: 100px;
   transform: scale(1.3);
 }
 
 #tool-like9 {
-  width: 108px;
+  width: 100px;
   transform: scale(0.9);
 }
 
 #tool-like10 {
-  width: 108px;
+  width: 100px;
   transform: scale(0.9);
 }
 
-#tool-like11 {
+/* #tool-like11 {
   width: 100px;
   transform: scale(0.8);
-}
+} */
 
 /* End Tools I Like To Use */
 
@@ -898,7 +897,6 @@ section {
 
 /* ================== SMART MEDIA QUERY FIXES ================== */
 @media (max-width: 992px) {
-
   /* Hide Floating Icons */
   .html-icon,
   .css-icon,
@@ -914,7 +912,7 @@ section {
 
   /* Hero text */
   .row .col-md-6 h1 {
-    font-size: 32px;
+    font-size: 28px;
   }
 
   .row .col-md-6 h4 {
@@ -942,7 +940,6 @@ section {
 
 /* ================== MOBILE ================== */
 @media (max-width: 767px) {
-
   #home-content {
     margin-top: 50px;
   }
@@ -995,7 +992,6 @@ section {
 
 /* ================== VERY SMALL MOBILES (iPhone SE / 360px) ================== */
 @media (max-width: 420px) {
-
   .row .col-md-6 h1 {
     font-size: 22px;
   }
