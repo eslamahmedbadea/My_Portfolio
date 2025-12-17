@@ -179,7 +179,7 @@ section {
 }
 
 .home-img {
-  width: 100%;
+  max-width: 100%;
   animation: home-img 3s infinite ease-in-out;
 }
 
