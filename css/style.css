@@ -5,7 +5,7 @@
   --text-color: white;
   --background-color: #1b1f29;
   --navbar-bg: #10131a;
-  --section-padding: 100px;
+  --section-padding: 100px 0;
   --transition: 0.3s;
 }
 
@@ -22,11 +22,16 @@ body {
   background-color: var(--background-color);
   color: var(--text-color);
   transition: var(--transition);
-  overflow-x: hidden;
 }
 
 section {
   background: transparent !important;
+}
+
+.container {
+  padding-left: 25px;
+  padding-right: 25px;
+  overflow: hidden;
 }
 /* End Global Attributes */
 
@@ -67,7 +72,6 @@ section {
 
 .navbar-toggler {
   border-color: white;
-  transform: translateX(-100px);
 }
 
 .navbar.scroll {
@@ -106,9 +110,16 @@ section {
   color: white;
   border: 1px solid white;
   font-size: 18px;
-  margin-right: 10px;
+  margin-right: 15px;
   transition: var(--transition);
   border-radius: 10px;
+}
+
+@media (max-width: 991px) {
+  .social-icon {
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
 }
 
 .social-icon:hover {
@@ -124,7 +135,7 @@ section {
 #icon {
   font-size: 35px;
   cursor: pointer;
-  margin-left: 15px;
+  margin-left: 10px;
   color: white;
   transition: var(--transition);
 }
