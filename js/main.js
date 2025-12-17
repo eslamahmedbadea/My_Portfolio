@@ -1,34 +1,23 @@
-// Light & Dark Mode
+// Call Elements
 var icon = document.getElementById('icon');
 const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
 const navbarCollapse = document.querySelector('.navbar-collapse');
-
-navLinks.forEach(link => {
-  link.addEventListener('click', () => {
-    const bsCollapse = new bootstrap.Collapse(navbarCollapse, {
-      toggle: false
-    });
-    bsCollapse.hide();
-  });
-});
-
-
-icon.onclick = function () {
-  document.body.classList.toggle('dark-theme');
-
-  // Change icon between moon/sun
-  if (icon.name === 'moon') {
-    icon.name = 'sunny';
-  } else {
-    icon.name = 'moon';
-  }
-};
 
 // Scoll Animation Setup
 AOS.init({
   duration: 800,
   once: true,
 });
+
+// Light & Dark Mode
+icon.onclick = function () {
+  document.body.classList.toggle('dark-theme');
+  if (icon.name === 'moon') {
+    icon.name = 'sunny';
+  } else {
+    icon.name = 'moon';
+  }
+};
 
 // NavBar Shadow Setup
 window.onscroll = function () {
@@ -41,3 +30,13 @@ window.onscroll = function () {
 
 // Make background video slower
 document.getElementById('back-video').playbackRate = 0.8;
+
+// Close menu after choosing any option
+navLinks.forEach(function (link) {
+  link.addEventListener('click', function () {
+    const bsCollapse = new bootstrap.Collapse(navbarCollapse, {
+      toggle: false,
+    });
+    bsCollapse.hide();
+  });
+});
