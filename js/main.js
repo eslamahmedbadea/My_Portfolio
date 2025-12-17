@@ -15,6 +15,7 @@ icon.onclick = function () {
 // Scoll Animation Setup
 AOS.init({
   duration: 800,
+  once: true,
 });
 
 // NavBar Shadow Setup
