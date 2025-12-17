@@ -1,5 +1,17 @@
 // Light & Dark Mode
 var icon = document.getElementById('icon');
+const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+const navbarCollapse = document.querySelector('.navbar-collapse');
+
+navLinks.forEach(link => {
+  link.addEventListener('click', () => {
+    const bsCollapse = new bootstrap.Collapse(navbarCollapse, {
+      toggle: false
+    });
+    bsCollapse.hide();
+  });
+});
+
 
 icon.onclick = function () {
   document.body.classList.toggle('dark-theme');
