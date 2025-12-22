@@ -3,12 +3,6 @@ var icon = document.getElementById('icon');
 const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
 const navbarCollapse = document.querySelector('.navbar-collapse');
 
-// Scoll Animation Setup
-AOS.init({
-  duration: 800,
-  once: true,
-});
-
 // Light & Dark Mode
 icon.onclick = function () {
   document.body.classList.toggle('dark-theme');
@@ -28,9 +22,6 @@ window.onscroll = function () {
   }
 };
 
-// Make background video slower
-document.getElementById('back-video').playbackRate = 0.8;
-
 // Close menu after choosing any option
 navLinks.forEach(function (link) {
   link.addEventListener('click', function () {
@@ -39,4 +30,10 @@ navLinks.forEach(function (link) {
     });
     bsCollapse.hide();
   });
+});
+
+// Scoll Animation Setup
+AOS.init({
+  duration: 800,
+  once: true,
 });
