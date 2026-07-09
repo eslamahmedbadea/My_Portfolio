@@ -25,7 +25,8 @@ The website includes essential sections like:
 
 - HTML5
 - CSS3 (Flexbox & Grid)
-- Vanilla JavaScript (ES6+)
+- Bootstrap
+- JavaScript (ES6+)
 
 ## ✨ Features
 
