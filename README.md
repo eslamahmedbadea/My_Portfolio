@@ -1,6 +1,6 @@
 # Personal Portfolio Website
 
-A modern and responsive personal portfolio website built using pure HTML, CSS, Bootstrap and JavaScript. This project showcases my skills, projects, and contact information in a clean and interactive way.
+A modern and responsive personal portfolio website built using pure HTML, CSS, Bootstrap and JavaScript. This project showcases my skills, projects, and contact information in a clean and interactive UI.
 
 ## 🚀 Overview
 
